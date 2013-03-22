@@ -14,7 +14,7 @@
 
 * Compose a system - your requirements.
 
-* Don't tie yourself to a single monolitic piece of software or service.
+* Don't tie yourself to a single monolithic piece of software or service.
 
 <!SLIDE center transition=growX>
 ![devastator](../img/devastator_layout.png)
