@@ -1,0 +1,64 @@
+/* Reference to Fonts
+ ***********************/
+
+@font-face { font-family: "Gotham Rounded Book"; src: url('fonts/GothamRnd-Book.otf'); }
+@font-face { font-family: "Gotham Rounded Medium"; src: url('fonts/GothamRnd-Medium.otf'); }
+
+/* Angryfruitsalad!  */
+@import "sh_emacs.css";
+
+/* Basic Elements */
+
+body {
+    background: url('img/slide_bg.png') #dcf9ff repeat-x 0 0;
+    font: .8em "Gotham Rounded Book", arial, helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font: 500 1.5em/2em "Gotham Rounded Medium";
+    color: #5d9b3e;
+/* border-bottom: 1px solid #b2d7e1; */
+}
+
+.content {
+    color: #606a6d;
+}
+
+.subsection h1 {
+    font-family: "Gotham Rounded Medium";
+    background: white;
+    color: #5d9b3e;
+    border-top: 1px solid #b2d7e1;
+    border-bottom: 1px solid #b2d7e1;
+}
+
+#footer {
+    background: #97C67F;
+}
+
+/* Code font*/
+/* #preso code, */
+/* #preso pre { */
+/*     font-family: Consolas, */
+/*              "Andale Mono", */
+/*              "Lucida Console", */
+/*              "Lucida Sans Typewriter", */
+/*              "DejaVu Sans Mono", */
+/*              "Bitstream Vera Sans Mono", */
+/*              "Liberation Mono", */
+/*              "Nimbus Mono L", */
+/*              Monaco, */
+/*              "Courier New", */
+/*              Courier, */
+/*              monospace; */
+/*     color: #000; */
+/*     padding: 0.5em; */
+/*     font-size: 18px; */
+/*     background-color: transparent; */
+/* } */
+/* #preso code { */
+/*     display: block; */
+/*     border: 1px dashed #65aaba; */
+/*     background-color: #eee; */
+/* } */

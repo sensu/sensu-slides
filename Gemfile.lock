@@ -1,0 +1,32 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    blankslate (2.1.2.4)
+    bluecloth (2.2.0)
+    gli (1.6.0)
+    json (1.7.7)
+    nokogiri (1.5.9)
+    parslet (1.5.0)
+      blankslate (~> 2.0)
+    rack (1.5.2)
+    rack-protection (1.5.0)
+      rack
+    showoff (0.7.0)
+      bluecloth
+      gli (>= 1.3.2)
+      json
+      nokogiri
+      parslet
+      sinatra
+    sinatra (1.4.2)
+      rack (~> 1.5, >= 1.5.2)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    tilt (1.3.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gli (~> 1.2)
+  showoff
