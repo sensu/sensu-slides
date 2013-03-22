@@ -1,1 +1,1 @@
-web: bundle exec showoff serve
+web: bundle exec thin start -p $PORT
