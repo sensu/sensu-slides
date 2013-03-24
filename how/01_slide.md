@@ -39,6 +39,9 @@
 <!SLIDE center>
 # 1:N
 
+<!SLIDE center>
+![see](../img/i-see-what-you-did-there.png)
+
 <!SLIDE center bullets incremental transition=scrollLeft>
 # Alternatively
 
