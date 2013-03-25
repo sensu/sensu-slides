@@ -10,7 +10,7 @@
 
 * Walk through Sensu configuration.
 
-* Provide you with a sandbox to play in.
+* Provide you with a sandbox.
 
 * Assist you with your experiments.
 

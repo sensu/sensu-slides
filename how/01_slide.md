@@ -29,7 +29,19 @@
 
 ## >= 3: UNKNOWN or CUSTOM
 
-<!SLIDE center bullets incremental transition=growX>
+<!SLIDE bullets transition=scrollUp>
+# Handler
+
+* Takes action on event data.
+
+* Several types; execute a script, open a socket ...
+
+## [Pipe, TCP, UDP, AMQP, Set]
+
+<!SLIDE center transition=growX>
+![badass](../img/badass.png)
+
+<!SLIDE center bullets incremental>
 * Execute a check on a collection* of clients.
 
 * Clients have subscriptions, a list of responsibilities (targets).
@@ -42,11 +54,11 @@
 <!SLIDE center>
 ![see](../img/i-see-what-you-did-there.png)
 
-<!SLIDE center bullets incremental transition=scrollLeft>
+<!SLIDE bullets incremental transition=scrollLeft>
 # Alternatively
 
 * Checks can use standalone mode.
 
 * Only scheduled and executed on the client.
 
-* Push\*\*
+* Push, no orchestration.
