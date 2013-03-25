@@ -54,7 +54,7 @@
 <!SLIDE center>
 ![see](../img/i-see-what-you-did-there.png)
 
-<!SLIDE bullets incremental transition=scrollLeft>
+<!SLIDE center bullets incremental transition=scrollLeft>
 # Alternatively
 
 * Checks can use standalone mode.
@@ -62,3 +62,8 @@
 * Only scheduled and executed on the client.
 
 * Push, no orchestration.
+
+<!SLIDE center bullets incremental>
+* Every check result is inspected.
+
+* Those with a non-zero exit status or marked as a metric cause the creation of an event.
