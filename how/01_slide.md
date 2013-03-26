@@ -54,14 +54,24 @@
 <!SLIDE center>
 ![see](../img/i-see-what-you-did-there.png)
 
-<!SLIDE center bullets incremental transition=scrollLeft>
+<!SLIDE center>
 # Alternatively
 
-* Checks can use standalone mode.
+<!SLIDE center bullets incremental transition=scrollLeft>
+# Check Standalone Mode
 
 * Only scheduled and executed on the client.
 
 * Push, no orchestration.
+
+<!SLIDE center bullets incremental transition=scrollLeft>
+# Client Socket
+
+## [localhost:3030]
+
+* Client has a TCP/UDP socket for external input.
+
+* {name: "foo", output: "bar", "status": 1}
 
 <!SLIDE center bullets transition=scrollLeft>
 * Every check result is inspected.
