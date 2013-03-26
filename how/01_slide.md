@@ -73,6 +73,9 @@
 
 * {name: "foo", output: "bar", "status": 1}
 
+<!SLIDE center>
+![awwwyeah](../img/awwwyeah.png)
+
 <!SLIDE center bullets transition=scrollLeft>
 * Every check result is inspected.
 
