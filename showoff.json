@@ -4,6 +4,7 @@
     "author": "Sean Porter <portertech@gmail.com>",
     "sections": [
         {"section":"intro"},
-        {"section":"how"}
+        {"section":"how"},
+        {"section":"config"}
     ]
 }
