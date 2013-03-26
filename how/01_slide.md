@@ -19,7 +19,7 @@
 
 * Outputs data* to STDOUT or STDERR.
 
-* Uses exit code to indicate severity.
+* Uses exit status to indicate severity.
 
 ## 0: OK
 
