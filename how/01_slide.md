@@ -60,9 +60,11 @@
 <!SLIDE center bullets incremental transition=scrollLeft>
 # Check Standalone Mode
 
+## [I'm my own boss!]
+
 * Only scheduled and executed on the client.
 
-* Push, no orchestration.
+* Push, no execution orchestration.
 
 <!SLIDE center bullets incremental transition=scrollLeft>
 # Client Socket
