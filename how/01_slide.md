@@ -63,7 +63,56 @@
 
 * Push, no orchestration.
 
-<!SLIDE center bullets incremental>
+<!SLIDE center bullets transition=scrollLeft>
 * Every check result is inspected.
 
-* Those with a non-zero exit status or marked as a metric cause the creation of an event.
+## Non-zero exit status?
+
+## First zero exit status in a series?
+
+## Marked as a metric?
+
+## V
+
+# Event
+
+<!SLIDE center transition=scrollUp>
+# Event Data
+
+## [What does it look like?]
+
+<!SLIDE code small>
+    @@@
+    {
+      client: {
+        name: "host01",
+        address: "10.2.1.11",
+        subscriptions: ["application"],
+        timestamp: 1364274222
+      },
+      check: {
+        name: "frontend_http",
+        command: "check_http -u http://example.com",
+        subscribers: ["application"],
+        handlers: ["pagerduty"],
+        interval: 60,
+        output: "HTTP/1.1 503 Service Temporarily Unavailable",
+        status: 2,
+        history: [0, 2],
+        flapping: false,
+        issued: 1364274239,
+        executed: 1364274240
+      },
+      occurrences: 1,
+      action: "create"
+    }
+
+<!SLIDE center bullets incremental>
+# What can we do with it?
+
+## [Event data & HANDLERS]
+
+* Send an email, or ...
+
+<!SLIDE center transition=scrollUp>
+![endpoints](../img/endpoints.png)
