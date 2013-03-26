@@ -49,3 +49,16 @@
         }
       }
     }
+
+<!SLIDE code medium>
+    @@@
+    {
+      "checks": {
+        "foo": {
+          "type": "metric",
+          "command": "echo metric 42 `date +%s`",
+          "standalone": true,
+          "interval": 10
+        }
+      }
+    }
