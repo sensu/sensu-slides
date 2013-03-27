@@ -5,6 +5,7 @@
     "sections": [
         {"section":"intro"},
         {"section":"how"},
-        {"section":"config"}
+        {"section":"config"},
+        {"section":"sandbox"}
     ]
 }

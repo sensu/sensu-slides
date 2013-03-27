@@ -82,3 +82,6 @@
         }
       }
     }
+
+<!SLIDE center transition=growY>
+![devastator](../img/devastator-oh-yea.png)
