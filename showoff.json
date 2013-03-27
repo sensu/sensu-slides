@@ -6,6 +6,7 @@
         {"section":"intro"},
         {"section":"how"},
         {"section":"config"},
-        {"section":"sandbox"}
+        {"section":"sandbox"},
+        {"section":"end"}
     ]
 }
