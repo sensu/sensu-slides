@@ -1,12 +1,4 @@
-<!SLIDE bullets incremental transition=scrollUp>
-# Some Ideas
+<!SLIDE center transition=scrollUp>
+# Challenges
 
-* Write your own check & handler.
-
-* Send event notifications to a chat.
-
-* Collect & store metrics in Graphite.
-
-* Use the Client socket.
-
-* Build something on the API.
+## [Things to try!]

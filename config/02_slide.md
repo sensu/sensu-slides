@@ -1,7 +1,7 @@
 <!SLIDE center transition=scrollUp>
 # Check Definition
 
-## [What does it look like?]
+## [How does one look?]
 
 <!SLIDE code medium transition=scrollUp>
     @@@
