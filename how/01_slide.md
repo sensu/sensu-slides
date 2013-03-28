@@ -34,7 +34,7 @@
 
 * Takes action on event data.
 
-* Several types; execute a script, open a socket ...
+* Several types: execute a script, open a socket ...
 
 ## [Pipe, TCP, UDP, AMQP, Set]
 
