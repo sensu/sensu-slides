@@ -99,12 +99,12 @@
       client: {
         name: "host01",
         address: "10.2.1.11",
-        subscriptions: ["application"],
+        subscriptions: ["linux", "application"],
         timestamp: 1364274222
       },
       check: {
-        name: "frontend_http",
-        command: "check_http -u http://example.com",
+        name: "frontend_https",
+        command: "check_http.rb --url https://example.com",
         subscribers: ["application"],
         handlers: ["pagerduty"],
         interval: 60,

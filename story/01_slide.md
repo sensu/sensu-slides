@@ -30,7 +30,7 @@
 
 * Ran Sensu alongside Nagios for two months.
 
-* Reduced false positives, cost, & friction.
+* Reduced false positives, cost, and friction.
 
 * Increased happiness :)
 

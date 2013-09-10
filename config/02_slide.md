@@ -21,13 +21,42 @@
     @@@
     {
       "checks": {
-        "foo": {
-          "command": "echo -n foo && exit 1",
+        "haproxy_services": {
+          "command": "check-haproxy.rb -w 70 -c 50",
           "subscribers": [
-            "bar"
+            "load_balancer"
+          ],
+          "interval": 30
+        }
+      }
+    }
+
+<!SLIDE code medium>
+    @@@
+    {
+      "checks": {
+        "haproxy_services": {
+          "command": "check-haproxy.rb -w 70 -c 50",
+          "subscribers": [
+            "load_balancer"
           ],
           "interval": 30,
-          "handlers": ["baz", "qux"],
+          "handlers": ["irc", "pagerduty"]
+        }
+      }
+    }
+
+<!SLIDE code medium>
+    @@@
+    {
+      "checks": {
+        "haproxy_services": {
+          "command": "check-haproxy.rb -w 70 -c 50",
+          "subscribers": [
+            "load_balancer"
+          ],
+          "interval": 30,
+          "handlers": ["irc", "pagerduty"],
           "custom": {
             "nested": "attribute"
           }
@@ -35,13 +64,13 @@
       }
     }
 
-<!SLIDE code medium>
+<!SLIDE code medium transition=scrollUp>
     @@@
     {
       "checks": {
         "foo": {
           "type": "metric",
-          "command": "echo metric 42 `date +%s`",
+          "command": "echo bar 42 `date +%s`",
           "subscribers": [
             "bar"
           ],
@@ -56,9 +85,23 @@
       "checks": {
         "foo": {
           "type": "metric",
-          "command": "echo metric 42 `date +%s`",
+          "command": "echo bar 42 `date +%s`",
           "standalone": true,
           "interval": 10
+        }
+      }
+    }
+
+<!SLIDE code medium>
+    @@@
+    {
+      "checks": {
+        "haproxy_metrics": {
+          "type": "metric",
+          "command": "haproxy-metrics.rb",
+          "standalone": true,
+          "interval": 10,
+          "handlers": ["graphite"]
         }
       }
     }

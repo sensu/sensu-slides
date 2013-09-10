@@ -3,13 +3,13 @@
 
 ## [Energon]
 
-<!SLIDE code medium transition=scrollUp>
+<!SLIDE code medium>
     @@@
     {
       "handlers": {
         "mail": {
           "type": "pipe",
-          "command": "mail -s 'sensu' foo@bar.ca"
+          "command": "mail -s 'sensu' ops@control"
         }
       }
     }
@@ -21,6 +21,20 @@
         "pagerduty": {
           "type": "pipe",
           "command": "pagerduty.rb"
+        }
+      }
+    }
+
+<!SLIDE code medium transition=scrollUp>
+    @@@
+    {
+      "handlers": {
+        "default": {
+          "type": "set",
+          "handlers": [
+            "mail",
+            "pagerduty"
+          ]
         }
       }
     }
@@ -65,20 +79,6 @@
             "type": "fanout",
             "name": "sensu_events"
           }
-        }
-      }
-    }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "handlers": {
-        "default": {
-          "type": "set",
-          "handlers": [
-            "pagerduty",
-            "logstash"
-          ]
         }
       }
     }
