@@ -23,6 +23,17 @@
 
 * Easy to scale out.
 
+* \*API*
+
+<!SLIDE transition=scrollLeft>
+# Inspiration
+
+Unix philosophy.
+
+Japanese culture.
+
+## [Bamboo]
+
 <!SLIDE center bullets incremental transition=scrollLeft>
 # Sonian
 
