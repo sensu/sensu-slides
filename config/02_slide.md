@@ -7,8 +7,8 @@
     @@@
     {
       "client": {
-        "name": "host01",
-        "address": "10.2.1.11",
+        "name": "host02",
+        "address": "10.2.1.12",
         "subscriptions": [
           "linux",
           "load_balancer"

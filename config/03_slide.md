@@ -1,107 +1,25 @@
-<!SLIDE center transition=scrollUp>
-# Check Definition
+<!SLIDE center transition=scrollLeft>
+# Connection Definition
 
-## [Show me the options!]
+## [Let's wire it up!]
 
 <!SLIDE code medium transition=scrollUp>
     @@@
     {
-      "checks": {
-        "foo": {
-          "command": "echo -n foo && exit 1",
-          "subscribers": [
-            "bar"
-          ],
-          "interval": 30
-        }
-      }
-    }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "checks": {
-        "haproxy_services": {
-          "command": "check-haproxy.rb -w 70 -c 50",
-          "subscribers": [
-            "load_balancer"
-          ],
-          "interval": 30
-        }
-      }
-    }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "checks": {
-        "haproxy_services": {
-          "command": "check-haproxy.rb -w 70 -c 50",
-          "subscribers": [
-            "load_balancer"
-          ],
-          "interval": 30,
-          "handlers": ["irc", "pagerduty"]
-        }
-      }
-    }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "checks": {
-        "haproxy_services": {
-          "command": "check-haproxy.rb -w 70 -c 50",
-          "subscribers": [
-            "load_balancer"
-          ],
-          "interval": 30,
-          "handlers": ["irc", "pagerduty"],
-          "custom": {
-            "nested": "attribute"
-          }
-        }
+      "rabbitmq": {
+        "host": "10.2.1.2",
+        "port": 5672,
+        "vhost": "/sensu",
+        "user": "sensu",
+        "password": "secret"
       }
     }
 
 <!SLIDE code medium transition=scrollUp>
     @@@
     {
-      "checks": {
-        "foo": {
-          "type": "metric",
-          "command": "echo bar 42 `date +%s`",
-          "subscribers": [
-            "bar"
-          ],
-          "interval": 10
-        }
-      }
-    }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "checks": {
-        "foo": {
-          "type": "metric",
-          "command": "echo bar 42 `date +%s`",
-          "standalone": true,
-          "interval": 10
-        }
-      }
-    }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "checks": {
-        "haproxy_metrics": {
-          "type": "metric",
-          "command": "haproxy-metrics.rb",
-          "standalone": true,
-          "interval": 10,
-          "handlers": ["graphite"]
-        }
+      "redis": {
+        "host": "10.2.1.3",
+        "port": 6379
       }
     }
