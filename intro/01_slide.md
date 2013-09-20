@@ -1,11 +1,11 @@
 <!SLIDE center>
-# Sensu Workshop
+# Sensu Intro
  <span id="title">
  ![letter](../img/sensu_fan.png)
 </span>
 
 ## Heavy Water Operations
-### #Monitorama 2013
+### #DevOpsDays Tokyo, 2013
 
 <!SLIDE bullets incremental transition=scrollUp>
 # What is it?
@@ -19,8 +19,6 @@
 <!SLIDE center transition=growX>
 ![devastator](../img/devastator_layout.png)
 
-<!SLIDE smaller center bullets incremental transition=fadeZoom>
+<!SLIDE center transition=fadeZoom>
 
 ![devastator](../img/devastator-outofwater.png)
-
-* Transformers &#169;Hasbro, Thanks. {◕ ◡ ◕}

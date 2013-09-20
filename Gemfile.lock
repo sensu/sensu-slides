@@ -10,6 +10,7 @@ GEM
     nokogiri (1.5.9)
     parslet (1.5.0)
       blankslate (~> 2.0)
+    pdfkit (0.5.4)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -35,5 +36,6 @@ PLATFORMS
 
 DEPENDENCIES
   gli (~> 1.2)
+  pdfkit
   showoff
   thin

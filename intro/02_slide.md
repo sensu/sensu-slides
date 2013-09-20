@@ -1,18 +1,18 @@
 <!SLIDE bullets incremental>
-# Workshop
+# Intro
 
-## What are we going to do?
-
-* Learn, experiment, and share.
+## What am I going to do?
 
 <!SLIDE bullets incremental>
+* Share the origin story.
+
 * Explain how Sensu works.
 
 * Walk through Sensu configuration.
 
-* Provide you with a sandbox.
+* Provide examples.
 
-* Assist you with your experiments.
+* Hand out USB drives (sandbox).
 
 <!SLIDE center>
 ![letter](../img/lets_do_this.png)

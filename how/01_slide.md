@@ -29,6 +29,24 @@
 
 ## >= 3: UNKNOWN or CUSTOM
 
+<!SLIDE code medium transition=scrollLeft>
+    @@@ ruby
+    #!/usr/bin/env ruby
+
+    procs = `ps xco command`.split("\n")
+
+    running = procs.detect do |proc|
+      proc == 'chef-client'
+    end
+
+    if running
+      puts 'Chef client daemon is running'
+      exit 0 # OK
+    else
+      puts 'Chef client daemon is NOT running'
+      exit 1 # WARN
+    end
+
 <!SLIDE bullets transition=scrollUp>
 # Handler
 
@@ -37,6 +55,25 @@
 * Several types: execute a script, open a socket ...
 
 ## [Pipe, TCP, UDP, AMQP, Set]
+
+<!SLIDE code small transition=scrollLeft>
+    @@@ ruby
+    #!/usr/bin/env ruby
+
+    require 'json'
+    require 'mail'
+
+    event = JSON.parse(STDIN.read)
+
+    action = event['action'].eql?('resolve') ? 'RESOLVED' : 'ALERT'
+    source = event['client']['name'] + '/' + event['check']['name']
+
+    Mail.deliver do
+      to 'admins'
+      from 'sensu'
+      subject "Sensu #{action} - #{source}"
+      body JSON.pretty_generate(event)
+    end
 
 <!SLIDE center transition=growX>
 ![badass](../img/badass.png)
@@ -50,9 +87,6 @@
 
 <!SLIDE center>
 # 1:N
-
-<!SLIDE center>
-![see](../img/i-see-what-you-did-there.png)
 
 <!SLIDE center>
 # Alternatively
@@ -102,12 +136,12 @@
       client: {
         name: "host01",
         address: "10.2.1.11",
-        subscriptions: ["application"],
+        subscriptions: ["linux", "application"],
         timestamp: 1364274222
       },
       check: {
-        name: "frontend_http",
-        command: "check_http -u http://example.com",
+        name: "frontend_https",
+        command: "check_http.rb --url https://example.com",
         subscribers: ["application"],
         handlers: ["pagerduty"],
         interval: 60,
