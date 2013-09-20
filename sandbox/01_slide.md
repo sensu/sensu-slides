@@ -10,7 +10,7 @@
 
 * A few examples.
 
-* Built with portertech/monitor.
+* Built with portertech/chef-monitor.
 
 <!SLIDE bullets>
 # Download

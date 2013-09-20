@@ -1,15 +1,18 @@
-<!SLIDE center transition=scrollLeft>
-# Handler Definition
+<!SLIDE center transition=scrollUp>
+# Check Definition
 
-## [Energon]
+## [Show me the options!]
 
-<!SLIDE code medium>
+<!SLIDE code medium transition=scrollUp>
     @@@
     {
-      "handlers": {
-        "mail": {
-          "type": "pipe",
-          "command": "mail -s 'sensu' ops@control"
+      "checks": {
+        "foo": {
+          "command": "echo -n foo && exit 1",
+          "subscribers": [
+            "bar"
+          ],
+          "interval": 30
         }
       }
     }
@@ -17,10 +20,46 @@
 <!SLIDE code medium>
     @@@
     {
-      "handlers": {
-        "pagerduty": {
-          "type": "pipe",
-          "command": "pagerduty.rb"
+      "checks": {
+        "haproxy_services": {
+          "command": "check-haproxy.rb -w 70 -c 50",
+          "subscribers": [
+            "load_balancer"
+          ],
+          "interval": 30
+        }
+      }
+    }
+
+<!SLIDE code medium>
+    @@@
+    {
+      "checks": {
+        "haproxy_services": {
+          "command": "check-haproxy.rb -w 70 -c 50",
+          "subscribers": [
+            "load_balancer"
+          ],
+          "interval": 30,
+          "handlers": ["irc", "pagerduty"]
+        }
+      }
+    }
+
+<!SLIDE code medium>
+    @@@
+    {
+      "checks": {
+        "haproxy_services": {
+          "command": "check-haproxy.rb -w 70 -c 50",
+          "subscribers": [
+            "load_balancer"
+          ],
+          "interval": 30,
+          "handlers": ["irc", "pagerduty"],
+          "custom": {
+            "nested": "attribute"
+          }
         }
       }
     }
@@ -28,13 +67,14 @@
 <!SLIDE code medium transition=scrollUp>
     @@@
     {
-      "handlers": {
-        "default": {
-          "type": "set",
-          "handlers": [
-            "mail",
-            "pagerduty"
-          ]
+      "checks": {
+        "foo": {
+          "type": "metric",
+          "command": "echo bar 42 `date +%s`",
+          "subscribers": [
+            "bar"
+          ],
+          "interval": 10
         }
       }
     }
@@ -42,14 +82,12 @@
 <!SLIDE code medium>
     @@@
     {
-      "handlers": {
-        "graphite": {
-          "type": "tcp",
-          "socket": {
-            "host": "127.0.0.1",
-            "port": 2003
-          },
-          "mutator": "only_check_output" **
+      "checks": {
+        "foo": {
+          "type": "metric",
+          "command": "echo bar 42 `date +%s`",
+          "standalone": true,
+          "interval": 10
         }
       }
     }
@@ -57,31 +95,13 @@
 <!SLIDE code medium>
     @@@
     {
-      "handlers": {
-        "graylog2": {
-          "type": "udp",
-          "socket": {
-            "host": "127.0.0.1",
-            "port": 12201
-          },
-          "mutator": "gelf"
+      "checks": {
+        "haproxy_metrics": {
+          "type": "metric",
+          "command": "haproxy-metrics.rb",
+          "standalone": true,
+          "interval": 10,
+          "handlers": ["graphite"]
         }
       }
     }
-
-<!SLIDE code medium>
-    @@@
-    {
-      "handlers": {
-        "logstash": {
-          "type": "amqp",
-          "exchange": {
-            "type": "fanout",
-            "name": "sensu_events"
-          }
-        }
-      }
-    }
-
-<!SLIDE center transition=growY>
-![devastator](../img/devastator-oh-yea.png)

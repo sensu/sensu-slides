@@ -19,8 +19,6 @@
 <!SLIDE center transition=growX>
 ![devastator](../img/devastator_layout.png)
 
-<!SLIDE smaller center bullets incremental transition=fadeZoom>
+<!SLIDE center transition=fadeZoom>
 
 ![devastator](../img/devastator-outofwater.png)
-
-* Transformers &#169;Hasbro, Thanks. {◕ ◡ ◕}

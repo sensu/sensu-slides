@@ -10,6 +10,15 @@
 
 * Sonian sponsored development.
 
+<!SLIDE transition=scrollLeft>
+# Inspiration
+
+Unix philosophy.
+
+Japanese culture.
+
+## [Bamboo]
+
 <!SLIDE center bullets incremental>
 # Design Goals
 
@@ -24,15 +33,6 @@
 * Easy to scale out.
 
 * \*API*
-
-<!SLIDE transition=scrollLeft>
-# Inspiration
-
-Unix philosophy.
-
-Japanese culture.
-
-## [Bamboo]
 
 <!SLIDE center bullets incremental transition=scrollLeft>
 # Sonian
