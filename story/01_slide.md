@@ -2,11 +2,11 @@
 # The origin story.
 
 <!SLIDE bullets transition=scrollUp>
-* Created at Sonian.
+* Created at <span class='green'>Sonian</span>.
 
 * July 11th, 2011
 
-* Began as a side project.
+* Began as a <span class='green'>side project</span>.
 
 * Sonian sponsored development.
 
@@ -32,7 +32,7 @@ Japanese culture.
 
 * Easy to scale out.
 
-* \*API*
+* <span class='green'>\*API*</span>
 
 <!SLIDE center bullets incremental transition=scrollLeft>
 # Sonian

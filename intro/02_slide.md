@@ -12,7 +12,7 @@
 
 * Provide examples.
 
-* Hand out USB drives (sandbox).
+* Hand out USB drives (<span class='green'>sandbox</span>).
 
 <!SLIDE center>
 ![letter](../img/lets_do_this.png)

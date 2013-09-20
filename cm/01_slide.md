@@ -6,4 +6,18 @@
 <!SLIDE bullets incremental>
 * recipe[haproxy]
 
-* recipe[monitor::haproxy]
+* recipe[<span class='green'>monitor::haproxy</span>]
+
+<!SLIDE transition=scrollRight>
+    @@@
+    {
+      "id": "check_zombies",
+      "command": "check-procs.rb -s Z -w 10 -c 20",
+      "subscribers": [
+        "linux"
+      ],
+      "occurrences": 2,
+      "additional": {
+        "notification": "zombie processes piling up"
+      }
+    }
