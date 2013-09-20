@@ -7,6 +7,7 @@
         {"section":"story"},
         {"section":"how"},
         {"section":"config"},
+        {"section":"cm"},
         {"section":"sandbox"},
         {"section":"end"}
     ]
