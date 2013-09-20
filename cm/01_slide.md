@@ -8,7 +8,7 @@
 
 * recipe[<span class='green'>monitor::haproxy</span>]
 
-<!SLIDE transition=scrollRight>
+<!SLIDE transition=growY>
     @@@
     {
       "id": "check_zombies",
