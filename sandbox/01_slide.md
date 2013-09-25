@@ -4,7 +4,7 @@
 ## [What is it?]
 
 <!SLIDE bullets incremental>
-* VirtualBox image.
+* VirtualBox appliance.
 
 * Running the Sensu components.
 
@@ -15,4 +15,4 @@
 <!SLIDE bullets>
 # Download
 
-* repos.sensuapp.org/box/sandbox.box
+* repos.sensuapp.org/ova/sandbox.ova
