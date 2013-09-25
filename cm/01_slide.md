@@ -1,7 +1,7 @@
 <!SLIDE transition=scrollUp>
 # Sensu & Chef
 
-## [Configuration Management]
+## [A love story.]
 
 <!SLIDE bullets incremental>
 * recipe[haproxy]
@@ -21,3 +21,12 @@
         "notification": "zombie processes piling up"
       }
     }
+
+<!SLIDE transition=scrollLeft>
+# Cookbooks
+
+github.com/sensu/sensu-chef
+
+github.com/<span class='green'>portertech/chef-monitor</span>
+
+## [LWRPs + Wrapper]

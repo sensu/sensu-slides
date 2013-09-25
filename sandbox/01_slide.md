@@ -16,3 +16,6 @@
 # Download
 
 * repos.sensuapp.org/ova/sandbox.ova
+
+<!SLIDE transition=scrollUp>
+# Demo!
