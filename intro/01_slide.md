@@ -5,7 +5,7 @@
 </span>
 
 ## Heavy Water Operations
-### #DevOpsDays Tokyo, 2013
+### #DevOpsDays Vancouver, 2013
 
 <!SLIDE bullets incremental transition=scrollUp>
 # What is it?

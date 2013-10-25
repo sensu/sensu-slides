@@ -10,6 +10,3 @@ portertech@hw-ops.com
 www.hw-ops.com || github.com/heavywater
 
 ![tiny logo](../img/tiny-logo.png)
-
-<!SLIDE center>
-# Arigatou gozaimasu!
