@@ -23,7 +23,7 @@
       }
     }
 
-<!SLIDE transition=scrollLeft>
+<!SLIDE>
     @@@ ruby
     sensu_check "check_zombies" do
       command "check-procs.rb -s Z -w 10 -c 20"
